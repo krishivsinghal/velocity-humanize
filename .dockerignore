@@ -1,0 +1,14 @@
+venv
+venv_ml
+.git
+data
+artifacts
+logs
+**/__pycache__
+**/*.pyc
+**/*.pt
+!serve/checkpoint.pt
+*.mid
+*.wav
+*.mp3
+notes.md

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: velocity-humanize
+    runtime: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: HUMANIZE_CHECKPOINT
+        value: /app/serve/checkpoint.pt
+      - key: CORS_ORIGINS
+        value: https://krishivsinghal.github.io
